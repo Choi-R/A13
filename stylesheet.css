@@ -1,9 +1,11 @@
+p {
+  margin-block-start: 0em !important;
+}
 header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
 }
-
 
 .header-left {
   position: sticky;
@@ -29,7 +31,7 @@ header {
 .header-right {
   position: sticky;
   float: right;
-  display: inline;
+  /* display: inline; */
   list-style-type: none;
   margin-right: 20px;
   transition: all 0.5s;
@@ -262,7 +264,8 @@ a {
   padding: 20px;
 }
 
-.album-title, .order-now {
+.album-title,
+.order-now {
   text-align: left;
   float: left;
   margin-right: 50px;
@@ -276,7 +279,7 @@ a {
   font-style: normal;
   font-weight: normal;
 }
-        
+
 .album-title {
   font-size: 32px;
   font-family: Roboto;
@@ -285,17 +288,12 @@ a {
 }
 
 .order-now {
-  background-color: #F00;
+  background-color: #f00;
   color: #000;
   font-size: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-}
-
-
-footer img {
-  width: 60px;
 }
 
 footer p {
@@ -307,15 +305,24 @@ footer {
   background-image: url(https://i.pinimg.com/originals/8a/b8/66/8ab86636d6740e5a418e9d8cb000f786.jpg);
   padding-top: 20px;
   background-size: cover;
+  display: flex;
+  padding-left: 80px;
+  flex-direction: column;
+}
+
+footer img {
+  width: 90px;
+  height: 100px
 }
 
 footer h1 {
-  position: absolute;
-  width: 356px;
+  /* position: absolute; */
+  /* width: 356px;
   height: 49px;
   left: 167px;
-  top: 1950px;
-
+  top: 1950px; */
+  padding: 0;
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -325,11 +332,11 @@ footer h1 {
   color: #a79b9b;
 }
 footer h2 {
-  position: absolute;
+  /* position: absolute;
   width: 356px;
   height: 49px;
   left: 164px;
-  top: 1975px;
+  top: 1975px; */
 
   font-family: Roboto;
   font-style: normal;
@@ -339,13 +346,25 @@ footer h2 {
 
   color: #a79b9b;
 }
+.choi {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+.choi2 {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (max-width: 1200px) {
-
+  body {
+    display: flex;
+    flex-direction: column;
+  }
   header {
-    height: 130px;
-    position: absolute;
-    float: initial;
+    /* height: 130px; */
+    display: flex;
+    /* position: absolute; */
   }
   .container {
     width: 1170px;
@@ -356,4 +375,28 @@ footer h2 {
     position: absolute;
     float: initial;
   }
+  .top-wrapper {
+    display: flex;
+  }
+  .lesson-wrapper {
+    display: flex;
+  }
+  .message-wrapper {
+    display: flex;
+  }
+
+  .lesson-icon img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .header-right a {
+    line-height: 65px;
+    padding: 0 5px;
+    color: white;
+    display: block;
+  }
+
 }
