@@ -272,6 +272,7 @@ a {
 }
 
 .album-desc {
+  margin-block-start: 0em !important;
   color: white;
   text-align: left;
   font-size: 25px;
@@ -312,7 +313,7 @@ footer {
 
 footer img {
   width: 90px;
-  height: 100px
+  height: 100px;
 }
 
 footer h1 {
@@ -398,5 +399,4 @@ footer h2 {
     color: white;
     display: block;
   }
-
 }
